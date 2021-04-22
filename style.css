@@ -1,0 +1,118 @@
+#header {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: rgb(110, 57, 78);
+    animation: vrunkhali 2s;
+}
+
+body{
+    background-image: url(Sea.jpg);
+    background-position: 100%;
+}
+
+.current {
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.header-input {
+    display: flex;
+    justify-content: center;
+    animation: vrunkhali 1.5s;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-bottom: 10%;
+    color: rgb(110, 57, 78);
+}
+.weather {
+    padding-top: 1%;
+    font-size: 1rem;
+    padding-bottom: 4%;
+    color: rgb(110, 57, 78);
+    
+}
+#temperature {
+    font-size: 30px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: rgb(110, 57, 78);
+
+}
+
+.Temp {
+    padding-top: 5%;
+    color: rgb(110, 57, 78);
+    
+
+}
+
+@media (max-width: 700px){
+    body{
+        background: cover;
+    }
+    #header{
+        font-size: 50px;
+        padding-top: 12%;
+    }
+    .header-input{
+        padding-top: 10%;
+    }
+    .location{
+        padding-bottom: 5%;
+    }
+    #welcome{
+        padding-top: 30%;
+        align-content: center;
+    }
+}
+
+#welcome {
+    text-align: center;
+    font-size: 40px;
+    color:rgb(110, 57, 78);
+    padding-top: 15%;
+    animation: khalunvr 2s;
+}
+#maxTemp , #status{
+    color: rgb(110, 57, 78);
+}
+#status {
+    font-size: 20px;
+    animation: khalunvr 2s;
+}
+
+
+@keyframes khalunvr {
+    0%{
+        transform: translateY(500%);
+        
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+}
+
+@keyframes vrunkhali {
+    0%{
+        transform: translateY(-100%);
+        
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+}
